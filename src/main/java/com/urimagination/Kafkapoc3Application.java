@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.core.KafkaTemplate;
 
+import java.time.LocalDateTime;
+
 @SpringBootApplication
 public class Kafkapoc3Application {
 
@@ -14,10 +16,11 @@ public class Kafkapoc3Application {
     }
 
     @Bean
-    CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate){
+    CommandLineRunner commandLineRunner(KafkaTemplate<String, Message> kafkaTemplate){
         return args -> {
             for (int i = 0; i < 93; i++) {
-                kafkaTemplate.send("urimagination", "Hello UR Kafka 🥰 " + " " + i);
+                kafkaTemplate.send("urimagination",
+                        new Message("Hello UR Kafka 🥰 " + " " + i, LocalDateTime.now()));
             }
         };
     }
