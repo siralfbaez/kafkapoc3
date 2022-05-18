@@ -1,5 +1,6 @@
 APACHE KAFKA QUICK POC
 ...
+
 ![](src/main/imgs/k1.png)
 
 APACHE KAFKA
