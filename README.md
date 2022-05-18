@@ -9,3 +9,6 @@ Apache Kafka is an open-source distributed event streaming platform used by thou
 ...
 ![](src/main/imgs/k2.png)
 more content coming soon!
+On this quick POC we write produce 30 million messages under
+3 minutes
+![](src/main/imgs/k30mil.png)
