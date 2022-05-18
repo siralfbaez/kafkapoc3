@@ -12,3 +12,7 @@ more content coming soon!
 On this quick POC we write produce 30 million messages under
 3 minutes
 ![](src/main/imgs/k30mil.png)
+
+QUICK REST API TO CONSUME APACHE KAFKA MESSAGES
+
+![](src/main/imgs/k-quick-rest-api-1.png)
